@@ -18,11 +18,11 @@ jobs:
           platform: linux
           image_resource:
             type: registry-image
-            source: { repository: busybox }
+            source: { repository: maven }
           run:
             path: sh
             args: 
-                - c  
+                - -c  
                 - |
-                  cd React-Spring-data-rest/React-spring-data-rest/tut-react-and-spring-data-rest-master/security/
+                  cd concourse-docs-git/React-spring-data-rest/tut-react-and-spring-data-rest-master/security/
                   mvn install 
